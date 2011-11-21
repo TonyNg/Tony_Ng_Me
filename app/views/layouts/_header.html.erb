@@ -1,0 +1,190 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    
+    <link href="../1.3.0/bootstrap.css" rel="stylesheet">
+
+
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        background-image:url('Images/Paper.jpg');
+      }
+      body {
+        padding-top: 20px; /* 40px to make the container go all the way to the bottom of the topbar */
+      }
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+
+      }
+      .container {
+        width: 940px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+      }
+
+      /* The white background content wrapper */
+      .content {
+		border: 1px solid #999;
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+			    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+
+      }
+
+      /* Page header tweaks */
+      .page-header {
+        background-color: #ffffff;
+        padding: 1px 1px 10px;
+        margin: -10px -20px 20px;
+	    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+
+	  }
+
+	  .page-header2 {
+        background-color: #f5f5f5;
+        padding: 2px 2px 0px;
+        margin: -20px -20px 20px;
+	    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+		height: 36px;
+	 	width: 974px;
+		position: relative;
+		z-index: 120;
+      }	
+
+      /* Styles you shouldn't keep as they are for displaying this base example only */
+	  .content .span1,
+      .content .span6,
+	  .content .span5,
+      .content .span4 {
+        min-height: 1000px;
+
+      }
+      /* Give a quick and non-cross-browser friendly divider */
+	.content .span1 {
+        margin-left: 0;
+        padding-left: 0px;
+      }
+	 .content .span6 {
+        margin-left: 0;
+        padding-left: 8px;
+		padding-right: 40px;
+        border-left: 1px solid #999;
+      }
+	.content .span5 {
+        margin-left: 0;
+        padding-left: 8px;
+        border-left: 1px solid #999;
+      }
+	  .content .span4 {
+        margin-left: 2px;
+        padding-left: 8px;
+		padding-right: 0px;
+        border-left: 1px solid #999;
+      }
+
+      .topbar .btn {
+        border: 0;
+      }
+
+    </style>
+<!--
+		<script type="text/javascript"
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() { 
+
+	 	var header = $('.page-header2'),
+		    win = $(window);
+
+		win.scroll(function() {
+		    header.css({ top: Math.max(Number(win.scrollTop() - 128), 0) });
+		});
+	});	
+	</script>
+	
+	-->
+
+	
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+        <div class="container">
+      		<div class="content">
+        		<div class="page-header">
+					<p>
+          			<div><img src="images/TNtimes.png">
+						<iframe src="//www.facebook.com/plugins/like.php?href=www.testing.com&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=290598300956769" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+						<div id="tweet">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out Tony Ng's personal page design!" data-count="horizontal" data-via="TonyNggg">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+						</div>
+						</div>
+						<p>
+						<div> <%= Time.now.strftime("%A %B, %Y")%>&nbsp;&nbsp;&nbsp;&nbsp;<%=Time.now.utc.getlocal.strftime("%I:%M 					       %p")%>&nbsp;<%=Time.now.zone%></div>
+        		</div>
+	
+					<div class="page-header2">
+						<h5>
+		          			<ul class="nav">
+		          				<li><%= link_to "Home", root_path %></li>
+		          				<li><%= link_to "Technology", tech_path %>
+									<ul>
+										<li><a>Mobile</a><li>
+										<li><a>Web Trends</a><li>
+										<li><a>Startups</a><li>
+									</ul>	
+								</li>	
+		          				<li><%= link_to "About", about_path %>
+									<ul>
+										<li><a>Mobile</a><li>
+										<li><a>Web Trends</a><li>
+										<li><a>Startups</a><li>
+									</ul>
+								</li>
+								<li><%= link_to "Travel", travel_path %>
+									<ul>
+										<li><a>Mobile</a><li>
+										<li><a>Web Trends</a><li>
+										<li><a>Startups</a><li>
+									</ul>
+								</li>
+								<li><%= link_to "Sports", travel_path %>
+									<ul>
+										<li><a>Mobile</a><li>
+										<li><a>Web Trends</a><li>
+										<li><a>Startups</a><li>
+									</ul>
+								</li>
+		          			</ul>
+		        		</h5>
+		          <h2 id="title"> <%=@title%> 
+		          <form id="search">
+		            <%= form_tag("/search", :method => "get") do %>
+		            <%= text_field_tag :search, params[:search] %>
+			    	<%= submit_tag "Search", :class => "btn primary", :name => nil %>
+			    	<% end %>
+		          </form>	
+		          </h2>
+		  			</div>
+
+  </head>
+
+	

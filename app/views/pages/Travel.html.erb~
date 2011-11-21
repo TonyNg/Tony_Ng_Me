@@ -1,0 +1,182 @@
+ <body>
+<!-- 
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Project name</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <form action="" class="pull-right">
+            <input class="input-small" type="text" placeholder="Username">
+            <input class="input-small" type="password" placeholder="Password">
+            <button class="btn" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+-->
+    <div class="container">
+
+      	<div class="content">
+        	<div class="page-header">
+          		<h1> The Tony Ng Times <small>Tech News, Bro!</small></h1>
+        	</div>
+
+			<div class="page-header2">
+				<h5>
+		          <ul class="nav">
+	<!--	            <li><a> <%= link_to "Home", root_path, :class=>"btn default" %> </a></li> -->
+					<li><%= link_to "Home", root_path %></li>
+		            <li><%= link_to "Tech", tech_path %></li>
+		            <li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Travel", travel_path %></li>
+		          </ul>
+		          <form action="search" class="pull-right">
+		            <%= form_tag("/search", :method => "get") do %>
+					  <%= text_field_tag :search, params[:search] %>
+					    <%= submit_tag "Search", :class => "btn primary", :name => nil %>
+					<% end %>
+		          </form>
+				</h5>
+        	</div>
+        	<div class="row">
+        		<div class="span7">
+          
+					<ul class="media-grid">
+					        <li>
+					          <a href="#">
+					            <img class="thumbnail" src="images/jump.jpg" alt="Big Boat" />
+					          </a>
+					        </li>
+					</ul>	
+					<h3>NBA Season Postponed</h3>
+					            <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+					            <p><a class="btn" href="#">View details &raquo;</a></p>
+						<hr / size=5px >
+        		</div>
+				<div class="span5">
+
+					<h2>Twitter Roxors</h2>
+					             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					            <p><a class="btn" href="#">View details &raquo;</a></p>
+						<hr / size=5px >
+						
+										    
+					<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+					<script type="text/javascript" src="/javascripts/bootstrap-tabs.js"></script>
+					<script type="text/javascript" src="/javascripts/bootstrap-dropdown.js"></script>
+
+
+													</body>
+												 			<h3>Meals and Deals</h3>
+													          <ul class="tabs" data-tabs="tabs">
+													            <li class="active"><a href="#home">Home</a></li>
+													            <li><a href="#profile">Costco Pizza</a></li>
+													            <li><a href="#messages">Stories</a></li>
+													            <li><a href="#settings">Quotes</a></li>
+													            <li class="dropdown" data-dropdown="dropdown">
+													              <a href="#" class="dropdown-toggle">Dropdown</a>
+													              <ul class="dropdown-menu">
+													                <li><a href="#fat">@Meow</a></li>
+													                <li><a href="#mdo">@Cat</a></li>
+													                <li><a href="#mdo">@Nyan</a></li>
+													                <li><a href="#mdo">@Gnarly</a></li>
+													                <li><a href="#mdo">@MEEP</a></li>
+									
+													              </ul>
+													            </li>
+													          </ul>
+																<script>
+																    $(function () {
+																        $('.tabs').tabs()
+																    })
+																</script>
+																<script>
+																  $('#.tabs').bind('change', function (e) {
+																  e.target // activated tab
+																  e.relatedTarget // previous tab
+																})
+																</script>
+			
+			
+						          <div id="my-tab-content" class="tab-content">
+						            <div class="active tab-pane" id="home">
+						              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+						            </div>
+						            <div class="tab-pane" id="profile">
+						              <p>A hearty meal meal and surely filling.  Affordable, healthy, and delicious, who could ever pass up on a slice of Costco's combo pizza.'</p>
+						            </div>
+						            <div class="tab-pane" id="messages">
+						              <p>Banksy do proident, brooklyn photo booth delectus sunt artisan sed organic exercitation eiusmod four loko. Quis tattooed iphone esse aliqua. Master cleanse vero fixie mcsweeney's. Ethical portland aute, irony food truck pitchfork lomo eu anim. Aesthetic blog DIY, ethical beard leggings tofu consequat whatever cardigan nostrud. Helvetica you probably haven't heard of them carles, marfa veniam occaecat lomo before they sold out in shoreditch scenester sustainable thundercats. Consectetur tofu craft beer, mollit brunch fap echo park pitchfork mustache dolor.</p>
+						            </div>
+						            <div class="tab-pane" id="settings">
+						              <p>Sunt qui biodiesel mollit officia, fanny pack put a bird on it thundercats seitan squid ad wolf bicycle rights blog. Et aute readymade farm-to-table carles 8-bit, nesciunt nulla etsy adipisicing organic ea. Master cleanse mollit high life, next level Austin nesciunt american apparel twee mustache adipisicing reprehenderit hoodie portland irony. Aliqua tofu quinoa +1 commodo eiusmod. High life williamsburg cupidatat twee homo leggings. Four loko vinyl DIY consectetur nisi, marfa retro keffiyeh vegan. Fanny pack viral retro consectetur gentrify fap.</p>
+						            </div>
+						            <div class="tab-pane" id="fat">
+						              <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+						            </div>
+						            <div class="tab-pane" id="mdo">
+						              <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+						            </div>
+						          </div>
+        		</div>
+        			<div class="span4">
+            	<h3>Opinion</h3>
+				<hr />
+				<ul style="list-style:none">
+					<li><a href="#home">Tony spent the last 8 hours working on this.</a></li>
+					<hr />
+		            <li><a href="#about">His thoughts: "WTF"</a></li>
+					<hr />
+		            <li><a href="#contact">FML so hard >:{|</a></li>
+					<hr />
+					 <li><a href="#about">Deeeeum HOMIE</a></li>
+					</ul>
+					<hr />
+						<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+						<script>
+						new TWTR.Widget({
+						  version: 2,
+						  type: 'profile',
+						  rpp: 4,
+						  interval: 30000,
+						  width: 225,
+						  height: 150,
+						  theme: {
+						    shell: {
+						      background: '#333333',
+						      color: '#ffffff'
+						    },
+						    tweets: {
+						      background: '#000000',
+						      color: '#ffffff',
+						      links: '#467fdb'
+						    }
+						  },
+						  features: {
+						    scrollbar: true,
+						    loop: false,
+						    live: false,
+						    behavior: 'all'
+						  }
+						}).render().setUser('TonyNggg').start();
+						</script>
+        			</div>
+      			</div>
+   			</div>
+			
+		
+
+
+      <footer>
+        <p>&copy; Tony Ng 2011</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+
+
