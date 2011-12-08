@@ -17,8 +17,9 @@ ul.nav li a {
   color: #ffffff;
   border: 0px solid #ffffff;
   padding: 7px 15px 7px 15px;
-  background: #5C5C5C;
+  background: #104E8B;
   margin: 1px;
+  border-radius: 0px; 
   white-space: nowrap;
 }
 ul.nav li a:hover { background: black; }
@@ -27,6 +28,7 @@ li:hover ul {
   position: absolute;
   z-index: 100;
   background:white;
+  box-shadow: 2px 4px 18px rgba(0, 0, 0, 1.4);
 }
 li:hover li {
   float: none;
@@ -34,4 +36,4 @@ li:hover li {
   color:black;
 }
 li:hover a { background: white; }
-li:hover li a:hover { background: white; color: black;}
+li:hover li a:hover { background: whitesmoke; color: black;}

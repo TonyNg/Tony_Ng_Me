@@ -62,7 +62,6 @@
 	    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
 		height: 36px;
 	 	width: 974px;
-		position: relative;
 		z-index: 120;
       }	
 
@@ -71,7 +70,7 @@
       .content .span6,
 	  .content .span5,
       .content .span4 {
-        min-height: 1000px;
+        min-height: 1400px;
 
       }
       /* Give a quick and non-cross-browser friendly divider */
@@ -102,22 +101,22 @@
       }
 
     </style>
-<!--
-		<script type="text/javascript"
-		src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	
 	<script>
 	$(document).ready(function() { 
 
-	 	var header = $('.page-header2'),
-		    win = $(window);
+	  $(window).scroll(function(e) {  
+	    if ($(window).scrollTop() > 115) { 
+	      $(".page-header2").addClass("fixed");
+	    } else {
+	      $(".page-header2").removeClass("fixed");
+	    } 
+	  }); 
 
-		win.scroll(function() {
-		    header.css({ top: Math.max(Number(win.scrollTop() - 128), 0) });
-		});
-	});	
+	});
 	</script>
-	
-	-->
 
 	
     <!-- Le fav and touch icons -->
