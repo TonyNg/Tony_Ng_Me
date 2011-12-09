@@ -63,11 +63,6 @@
 					             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 					            <p><a class="btn" href="#">View details &raquo;</a></p>
 						<hr / size=5px >
-						
-										    
-					<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
-					<script type="text/javascript" src="/javascripts/bootstrap-tabs.js"></script>
-					<script type="text/javascript" src="/javascripts/bootstrap-dropdown.js"></script>
 
 
 													</body>
@@ -85,17 +80,7 @@
 													              </ul>
 													            </li>
 													          </ul>
-																<script>
-																    $(function () {
-																        $('.tabs').tabs()
-																    })
-																</script>
-																<script>
-																  $('#.tabs').bind('change', function (e) {
-																  e.target // activated tab
-																  e.relatedTarget // previous tab
-																})
-																</script>
+															
 			
 			
 						          <div id="my-tab-content" class="tab-content">
@@ -169,6 +154,36 @@
 
       <footer>
         <p>&copy; Tony Ng 2011</p>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+		<script type="text/javascript" src="/javascripts/bootstrap-tabs.js"></script>
+		<script type="text/javascript" src="/javascripts/bootstrap-dropdown.js"></script>
+			
+		<script>
+		$(document).ready(function() { 
+
+		  $(window).scroll(function(e) {  
+		    if ($(window).scrollTop() > 115) { 
+		      $(".page-header2").addClass("fixed");
+		    } else {
+		      $(".page-header2").removeClass("fixed");
+		    } 
+		  }); 
+
+		});
+		</script>
+		
+		<script>
+			    $(function () {
+			        $('.tabs').tabs()
+			    })
+		</script>
+		<script>
+			  $('#.tabs').bind('change', function (e) {
+			  e.target // activated tab
+			  e.relatedTarget // previous tab
+			})
+		</script>
       </footer>
 
     </div> <!-- /container -->

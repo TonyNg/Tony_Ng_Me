@@ -1,9 +1,7 @@
-
-<head>
     <meta charset="utf-8">
     <title>Tony Ng Times</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="Tony Ng's personal newspaper" content="">
+    <meta name="Tony Ng" content="">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -14,110 +12,36 @@
     
 
 
-    <style type="text/css">
-      /* Override some defaults */
-      html, body {
-        background-image:url('images/Paper.jpg');
-      }
-      body {
-        padding-top: 20px; /* 40px to make the container go all the way to the bottom of the topbar */
-      }
-      .container > footer p {
-        text-align: center; /* center align it with the container */
-
-      }
-      .container {
-        width: 940px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
-      }
-
-      /* The white background content wrapper */
-      .content {
-		border: 1px solid #999;
-        background-color: #fff;
-        padding: 20px;
-        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-        -webkit-border-radius: 0 0 6px 6px;
-           -moz-border-radius: 0 0 6px 6px;
-                border-radius: 0 0 6px 6px;
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-                box-shadow: 0 1px 2px rgba(0,0,0,.15);
-			    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
-
-      }
-
-      /* Page header tweaks */
-      .page-header {
-        background-color: #ffffff;
-        padding: 1px 1px 10px;
-        margin: -10px -20px 20px;
-	    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
-
-	  }
-
-	  .page-header2 {
-        background-color: #f5f5f5;
-        padding: 2px 2px 0px;
-        margin: -20px -20px 20px;
-	    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
-		height: 36px;
-	 	width: 974px;
-		z-index: 120;
-      }	
-
-      /* Styles you shouldn't keep as they are for displaying this base example only */
-	  .content .span1,
-      .content .span6,
-	  .content .span5,
-      .content .span4 {
-        min-height: 1400px;
-
-      }
-      /* Give a quick and non-cross-browser friendly divider */
-	.content .span1 {
-        margin-left: 0;
-        padding-left: 0px;
-      }
-	 .content .span6 {
-        margin-left: 0;
-        padding-left: 8px;
-		padding-right: 40px;
-        border-left: 1px solid #999;
-      }
-	.content .span5 {
-        margin-left: 0;
-        padding-left: 8px;
-        border-left: 1px solid #999;
-      }
-	  .content .span4 {
-        margin-left: 2px;
-        padding-left: 8px;
-		padding-right: 0px;
-        border-left: 1px solid #999;
-      }
-
-      .topbar .btn {
-        border: 0;
-      }
-
-    </style>
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<!--
+	<script type="text/javascript" src="/javascripts/dropdown.js"></script>
+	<script type="text/javascript" src="/javascripts/hover.js"></script>
 	
+
 	<script>
-	$(document).ready(function() { 
+	[js]$(function () {
 
-	  $(window).scroll(function(e) {  
-	    if ($(window).scrollTop() > 115) { 
-	      $(".page-header2").addClass("fixed");
-	    } else {
-	      $(".page-header2").removeClass("fixed");
-	    } 
-	  }); 
+	$(‘.dropdown’).each(function () {
+	$(this).parent().eq(0).hoverIntent({
+	timeout: 100,
+	over: function () {
+	var current = $(‘.dropdown:eq(0)’, this);
+	current.slideDown(100);
+	},
+	out: function () {
+	var current = $(‘.dropdown:eq(0)’, this);
+	current.fadeOut(200);
+	}
+	});
+	});
 
+	$(‘.dropdown a’).hover(function () {
+	$(this).stop(true).animate({paddingLeft: ’35px’}, {speed: 100, easing: ‘easeOutBack’});
+	}, function () {
+	$(this).stop(true).animate({paddingLeft: ’0′}, {speed: 100, easing: ‘easeOutBounce’});
 	});
 	</script>
-
+	
+	-->
 	
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -144,7 +68,7 @@
 		          			<ul class="nav">
 		          				<li><%= link_to "Home", root_path %></li>
 		          				<li><%= link_to "Technology", tech_path %>
-									<ul>
+									<ul class="dropdown">
 										<li><a>Mobile</a><li>
 										<li><a>Web Trends</a><li>
 										<li><a>Startups</a><li>
@@ -182,7 +106,20 @@
 		          </form>	
 		          </h2>
 		  			</div>
+					<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 
-  </head>
+					<script>
+					$(document).ready(function() { 
+
+					  $(window).scroll(function(e) {  
+					    if ($(window).scrollTop() > 115) { 
+					      $(".page-header2").addClass("fixed");
+					    } else {
+					      $(".page-header2").removeClass("fixed");
+					    } 
+					  }); 
+
+					});
+					</script>
 
 	
