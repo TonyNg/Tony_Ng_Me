@@ -4,6 +4,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   list-style: none;
+  cursor:pointer;
 }
 ul.nav li {
   display: block;
@@ -23,6 +24,10 @@ ul.nav li a {
   white-space: nowrap;
 }
 ul.nav li a:hover { background: black; }
+ul.nav li.tech a:hover { background: green; }
+ul.nav li.about a:hover { background: red; }
+ul.nav li.travel a:hover { background: orange; }
+ul.nav li.sports a:hover { background: brown; }
 li:hover ul {
   display: block;
   position: absolute;
@@ -36,4 +41,4 @@ li:hover li {
   color:black;
 }
 li:hover a { background: white; }
-li:hover li a:hover { background: whitesmoke; color: black;}
+li:hover li a:hover { background: whitesmoke; color: whitesmoke;}

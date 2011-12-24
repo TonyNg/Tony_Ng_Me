@@ -9,40 +9,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    
-
-
-<!--
-	<script type="text/javascript" src="/javascripts/dropdown.js"></script>
-	<script type="text/javascript" src="/javascripts/hover.js"></script>
-	
-
-	<script>
-	[js]$(function () {
-
-	$(‘.dropdown’).each(function () {
-	$(this).parent().eq(0).hoverIntent({
-	timeout: 100,
-	over: function () {
-	var current = $(‘.dropdown:eq(0)’, this);
-	current.slideDown(100);
-	},
-	out: function () {
-	var current = $(‘.dropdown:eq(0)’, this);
-	current.fadeOut(200);
-	}
-	});
-	});
-
-	$(‘.dropdown a’).hover(function () {
-	$(this).stop(true).animate({paddingLeft: ’35px’}, {speed: 100, easing: ‘easeOutBack’});
-	}, function () {
-	$(this).stop(true).animate({paddingLeft: ’0′}, {speed: 100, easing: ‘easeOutBounce’});
-	});
-	</script>
-	
-	-->
-	
+   	
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -60,35 +27,35 @@
 						</div>
 						</div>
 						<p>
-						<div> <%= Time.now.strftime("%A %B, %Y")%>&nbsp;&nbsp;&nbsp;&nbsp;<%=Time.now.utc.getlocal.strftime("%I:%M 					       %p")%>&nbsp;<%=Time.now.zone%></div>
+						<div> <%= Time.now.strftime("%A %B, %Y")%>&nbsp;&nbsp;&nbsp;&nbsp;<%=Time.now.utc.getlocal.strftime("%l:%M 					       %p")%>&nbsp;<%=Time.now.zone%></div>
         		</div>
 	
 					<div class="page-header2">
 						<h5>
 		          			<ul class="nav">
 		          				<li><%= link_to "Home", root_path %></li>
-		          				<li><%= link_to "Technology", tech_path %>
+		          				<li class="tech"><%= link_to "Technology", tech_path %>
 									<ul class="dropdown">
 										<li><a>Mobile</a><li>
 										<li><a>Web Trends</a><li>
 										<li><a>Startups</a><li>
 									</ul>	
 								</li>	
-		          				<li><%= link_to "About", about_path %>
+		          				<li class="about"><%= link_to "About", about_path %>
 									<ul>
 										<li><a>Mobile</a><li>
 										<li><a>Web Trends</a><li>
 										<li><a>Startups</a><li>
 									</ul>
 								</li>
-								<li><%= link_to "Travel", travel_path %>
+								<li class="travel"><%= link_to "Travel", travel_path %>
 									<ul>
 										<li><a>Mobile</a><li>
 										<li><a>Web Trends</a><li>
 										<li><a>Startups</a><li>
 									</ul>
 								</li>
-								<li><%= link_to "Sports", travel_path %>
+								<li class="sports"><%= link_to "Sports", travel_path %>
 									<ul>
 										<li><a>Mobile</a><li>
 										<li><a>Web Trends</a><li>
