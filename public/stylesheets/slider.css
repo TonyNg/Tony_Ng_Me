@@ -5,7 +5,7 @@
 }
 /*--Window/Masking Styles--*/
 .window {
-	height:300px;	width: 379px;
+	height:274px;	width: 346px;
 	overflow: hidden; /*--Hides anything outside of the set width/height--*/
 	position: relative;
 }
@@ -18,7 +18,7 @@
 /*--Paging Styles--*/
 .paging {
 	position: absolute;
-	bottom: -18px; right: -7px;
+	bottom: -18px; right: -22px;
 	width: 178px; height:47px;
 	z-index: 100; /*--Assures the paging stays on the top layer--*/
 	text-align: center;
@@ -27,7 +27,7 @@
 	display: none; /*--Hidden by default, will be later shown with jQuery--*/
 }
 .paging a {
-	padding: 5px;
+	padding: 3px;
 	text-decoration: none;
 	color: #blue;
 }
@@ -39,4 +39,4 @@
 
 }
 .paging a:hover {font-weight: bold;}
-div#reel {margin-top:310px;}
+div#reel {margin-top:290px;}

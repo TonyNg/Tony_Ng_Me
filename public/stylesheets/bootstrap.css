@@ -42,7 +42,8 @@ body{padding-top: 20px;background-color:#ffffff;margin:0;font-family:"Helvetica 
 			    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-a{color:#104E8B;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;}
+a{color:#104E8B;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;  cursor:pointer;
+}
 .pull-right{float:right;}
 .pull-left{float:left;}
 .hide{display:none;}
@@ -64,20 +65,19 @@ a{color:#104E8B;text-decoration:none;line-height:inherit;font-weight:inherit;}a:
 	 .content .span6 {
         margin-left: 0;
         padding-left: 8px;
-		padding-right: 40px;
+		padding-right: 10px;
         border-left: 1px solid #999;
         min-height:1400px;
       }
 	.content .span5 {
         margin-left: 0;
         padding-left: 8px;
+        padding-right: 0px;
         border-left: 1px solid #999;
         min-height:1400px;
       }
 	  .content .span4 {
-        margin-left: 2px;
         padding-left: 8px;
-		padding-right: 0px;
         border-left: 1px solid #999;
         min-height:1400px;
       }
